@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Gabe_Greyscale
+  m_Shader: {fileID: 4800000, guid: c6f216da565ee40c49c4894eaa19265e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _EmissionMainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionTex:
+        m_Texture: {fileID: 2800000, guid: f2afffcc9164942bda69c9b6f88b14cd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a9589735c48114261810c9acfb37ec04, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorStrength: 2.1
+    - _EmissionColorStrength: 1
+    - _EmissionStrength: 2.87
+    - _Glossiness: 0
+    - _Metallic: 0
+    - _Radius: 2.83
+    - _Softness: 1.31
+    m_Colors:
+    - _Color: {r: 0.36764705, g: 0.36764705, b: 0.36764705, a: 1}
+    - _EmissionColor: {r: 0.7352941, g: 0.63506746, b: 0.21626295, a: 1}
+    - _Position: {r: 0, g: 0, b: 0, a: 0}
