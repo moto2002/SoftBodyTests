@@ -42,7 +42,7 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 0.79
+      intensity: 0.21
       radius: 0.3
       sampleCount: 10
       downsampling: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
       reflection:
         blendType: 0
         reflectionQuality: 0
-        maxDistance: 100
+        maxDistance: 83
         iterationCount: 256
         stepSize: 3
         widthModifier: 0.5

@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{BC7876E7-1CF7-A2AA-3E8D-18BA6EFCBAE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_1;UNITY_2017_3;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\Refract Shader\Examples\rotate.cs" />
+     <Compile Include="Assets\Scripts\Example.cs" />
+     <Compile Include="Assets\Scripts\RayCastBoom.cs" />
+     <Compile Include="Assets\ShaderTests\Phyllotaxis\Phyllotaxis.cs" />
+     <Compile Include="Assets\ShaderTests\Phyllotaxis\Phyllotaxis_Trail_Renderer.cs" />
+     <Compile Include="Assets\ShaderTests\Scripts\CameraRenderPostRenderNoise.cs" />
+     <Compile Include="Assets\ShaderTests\Scripts\CameraRenderTextureEffect.cs" />
+     <Compile Include="Assets\ShaderTests\Scripts\CameraRenderZbuffer.cs" />
+     <Compile Include="Assets\ShaderTests\Scripts\CameraSpotLight.cs" />
+     <Compile Include="Assets\ShaderTests\Spherical Mask\RayCast_MousePos.cs" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Pyramids2.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Cutout Reflective Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Cutout Reflective Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Cutout Bumped Specular.shader" />
+     <None Include="Assets\Refract Shader\Shaders\RefractSurf_noGloss.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\VertexLit (One Pass)_3.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\FireBall.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Outline and ScreenSpace texture.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\ObjectPit\Silhouette.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\WireFrame.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Transparent Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Cutout Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Transparent.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Billboard.shader" />
+     <None Include="Assets\Refract Shader\Shaders\RefractUnlit_full.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Reflective Bumped Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Truchet - Mesh.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\DistortingGrabPass.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Camera Effects\ZBuffer.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Transparent Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Transparent.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Reflective Bumped.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Bumped Specular.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\RayMarch\VolumetricSphere.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Transparent Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Cutout Reflective Bumped.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Flatten.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\ScrollingUV.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Reflective.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Extrude.shader" />
+     <None Include="Assets\ShaderTests\Shaders\PseudoRefraction.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\2PassOutline.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\CircleOnTerrain.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\BasicGlass.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Transparent Reflective Specular.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Bumped.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Transparent Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Transparent Reflective Bumped Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\OilPainting.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Cutout Reflective Specular.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+     <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Truchet - Enclosure.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Truchet - Snakes.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Reflective Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\VertexLit (One Pass)_1.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Reflective Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Reflective.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Transparent Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\VertexLit (One Pass)_2.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Fog.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Transparent Reflective.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\VertexLit (One Pass)_1.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Cutout Reflective Bumped Specular.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Transparent Reflective Bumped.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Cutout Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\VaryingColor.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\DX11_Tessellation_LengthBased.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\VertexLit (One Pass)_4.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Cutout Bumped Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\RimAnimated.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Cutout.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\DX11_Tessellation_DistanceBased.shader" />
+     <None Include="Assets\ShaderTests\Shaders\StainedBumpDistort.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\VertexShadow.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Transparent Reflective.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\FlatShading.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\DX11_Tessellation_DistanceBased.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Cutout Reflective.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Cutout Bumped.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Cutout.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Transparent Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Bumped Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\OutLine.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Perlin.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Truchet - Bacteria.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Diffuse.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\StencilMask\StencilEffect.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Transparent Bumped.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Bumped.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Section.shader" />
+     <None Include="Assets\ShaderTests\Shaders\RefractionMapping.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\DX11_Tessellation_LengthBased.shader" />
+     <None Include="Assets\Refract Shader\Shaders\RefractParticle.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\VertexSpecular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Transparent Reflective.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\ObjectPit\ObjectToPit.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Reflective Bumped.shader" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Bumped Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Tessellation.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Transparent Reflective Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Transparent Reflective Bumped.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\FinalColorSepia.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Camera Effects\GameBoy.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Pixelation.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Cutout Reflective.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Cutout Reflective.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Reflective Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Cutout Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Reflective Bumped Specular.shader" />
+     <None Include="Assets\Refract Shader\Shaders\RefractSurf_noGloss_noMaps.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\SnowEffect.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Transparent Specular.shader" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Transparent Reflective Bumped Specular.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\FrontFaces.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Bumped.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Cutout Bumped Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Camera Effects\TriangleMosaic.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Transparent Reflective Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\SSS.cginc" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\10 PRINT CHR$(205.5+RND(1)); _ GOTO 10_.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\DX11_Tessellation_DistanceBased.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Diffuse.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
+     <None Include="Assets\ShaderTests\Shaders\Camera Effects\PostRenderNoise.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Transparent Reflective Bumped.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Transparent.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Transparent Reflective Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Bumped.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+     <None Include="Assets\ShaderTests\Shaders\Object\StencilMask\Mask.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\RotatingVanishingLines.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Transparent Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Cutout Reflective Bumped.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\DX11_Tessellation_DistanceBased.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\ConcentricCircles.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Matrix.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Greyscale.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Cutout Bumped.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Transparent Reflective.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\TextureDependingNormal.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Transparent Reflective Bumped Specular.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\DX11_Tessellation_LengthBased.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\TextureDependingLight.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Cutout Reflective.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\DX11_Tessellation_LengthBased.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\AlphaDependingDistance.shader" />
+     <None Include="Assets\Refract Shader\ReadMe.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Transparent Reflective Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Cutout Reflective Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Reflective.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Pyramids.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Cutout.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Customizable Bump.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Transparent Bumped.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\CosmicEffect.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Transparent Bumped.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\UV rotation.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Reflective Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Camera Effects\Spotlight.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Cutout Bumped.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\BezierCurve.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Reflective Bumped.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Transparent Reflective Bumped.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\GrapPass.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Truchet - Circles.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Echolocation.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Transparent Bumped.shader" />
+     <None Include="Assets\Refract Shader\Shaders\RefractSurf_full.shader" />
+     <None Include="Assets\ShaderTests\Shaders\DoubleSided.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Camera Effects\Chromatic aberration.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\DiscardFragment.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\PseudoRandom.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Moss.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\VertexLit (One Pass)_3.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Truchet - Arabesque.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Reflective.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Cutout Reflective Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\VertexLit (One Pass)_4.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Cutout.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Cutout Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Cutout Bumped.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Cutout Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\WireframeTexture.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Diffuse.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Cutout Reflective Bumped.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\WorldSpaceTexture.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Transparent.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\all\Reflective Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\Cutout Reflective Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Diffuse.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\Shield.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\VertexLit (One Pass)_2.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\NormalsRimMask.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\ambient\Cutout Reflective Bumped Specular.shader" />
+     <None Include="Assets\ShaderTests\Shaders\Object\Other_Shaders\CelShader.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Reflective Bumped Specular.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Cutout Reflective Bumped.shader" />
+     <None Include="Assets\VacuumShaders\Subsurface Scattering Shader\Shaders\dynlightmap\Reflective Bumped.shader" />
+     <None Include="Assets\ShaderTests\Shaders\PseudoRefractionRGBM.shader" />
+ <Reference Include="Vuforia.UnityExtensions.Editor">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Vuforia.UnityExtensions">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Timeline">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIAutomation">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity 2017.3.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="VacuumShaders">
+ <HintPath>C:/Users/Nick/Documents/GitHub/SoftBodyTests/Assets/VacuumShaders/Editor/VacuumShaders.dll</HintPath>
+ </Reference>
+ <Reference Include="VacuumShaders.SubsurfaceScatteringShaderVC">
+ <HintPath>C:/Users/Nick/Documents/GitHub/SoftBodyTests/Assets/VacuumShaders/Subsurface Scattering Shader/Editor/VacuumShaders.SubsurfaceScatteringShaderVC.dll</HintPath>
+ </Reference>
+ <Reference Include="VacuumShaders.SubsurfaceScatteringShader_Editor">
+ <HintPath>C:/Users/Nick/Documents/GitHub/SoftBodyTests/Assets/VacuumShaders/Subsurface Scattering Shader/Editor/VacuumShaders.SubsurfaceScatteringShader_Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Users/Nick/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>C:/Users/Nick/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Users/Nick/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>C:/Users/Nick/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>C:/Users/Nick/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>C:/Users/Nick/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>C:/Users/Nick/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{952A399D-0727-D02F-1461-30434357B093}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
