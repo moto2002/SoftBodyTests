@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/GraphicsRoom.unity
+- path: Assets/Easy SoftBody/Scenes/SoftBody1.unity
   isLoaded: 1
   isActive: 1
