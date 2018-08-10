@@ -36,7 +36,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _CA: 0
-    - _EmissiveMapFactor: 1
+    - _EmissiveMapFactor: 0.734
     - _EmissiveMultiplier: 1
     - _FresnelIntensity: 0.18
     - _FresnelPower: 1

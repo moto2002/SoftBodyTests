@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Easy SoftBody/Scenes/SoftBody1.unity
+- path: Assets/RefractionTests.unity
   isLoaded: 1
   isActive: 1
