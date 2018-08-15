@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/DroeloeSkull.unity
+- path: Assets/DroeloePhoneBooth.unity
   isLoaded: 1
   isActive: 1
