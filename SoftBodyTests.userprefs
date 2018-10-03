@@ -1,7 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RayCastBoom.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpaceGravTests.cs">
     <Files>
+      <File FileName="Assets\Scripts\SpaceGravTests.cs" Line="34" Column="37" />
       <File FileName="Assets\Scripts\RayCastBoom.cs" Line="36" Column="50" />
       <File FileName="Assets\Scripts\Example.cs" Line="1" Column="1" />
     </Files>

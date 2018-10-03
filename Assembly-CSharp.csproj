@@ -414,6 +414,7 @@
      <Compile Include="Assets\Scripts\Example.cs" />
      <Compile Include="Assets\Scripts\LineRendererPositions.cs" />
      <Compile Include="Assets\Scripts\RayCastBoom.cs" />
+     <Compile Include="Assets\Scripts\SpaceGravTests.cs" />
      <Compile Include="Assets\ShaderTests\Phyllotaxis\Phyllotaxis.cs" />
      <Compile Include="Assets\ShaderTests\Phyllotaxis\Phyllotaxis_Trail_Renderer.cs" />
      <Compile Include="Assets\ShaderTests\Scripts\CameraRenderPostRenderNoise.cs" />
